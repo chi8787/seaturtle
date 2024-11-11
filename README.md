@@ -65,7 +65,6 @@ pip install torch torchvision pandas pillow tqdm matplotlib pycocotools
 
 For all models, including the traditional method, performance is evaluated using **Intersection over Union (IoU)** for each class:
 
-- **Background**
 - **Head**
 - **Flippers**
 - **Carapace**
