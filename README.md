@@ -1,5 +1,5 @@
 # Seaturtle
-This project focuses on segmenting different parts of sea turtles in images(Head, Flippers, Carapace) using deep learning. It leverages PyTorch and uses custom datasets with COCO annotations. The models are trained and evaluated using Intersection over Union (IoU) metrics.
+This project focuses on segmenting three parts of sea turtles in images(Head, Flippers, Carapace) using deep learning. It leverages PyTorch and uses SeaTurtleID2022 datasets. The models are trained and evaluated using Intersection over Union (IoU) metrics.
 
 ## Table of Contents
 - [Project Overview](#project-overview)
@@ -11,24 +11,22 @@ This project focuses on segmenting different parts of sea turtles in images(Head
 - [Usage](#usage)
 
 ## Project Overview
-This project implements a deep learning pipeline to perform semantic segmentation on sea turtle images. Key components include:
+This project implements a baseline model and two deep learning models to perform semantic segmentation on sea turtle images. Key components include:
 
 Custom Dataset Preparation using COCO annotations.
 Data Augmentation for improved generalization.
 Three Segmentation Models:
-- DeepLabV3
-- UNet-based Model
-- Traditional method
 
+- Traditional method
+- UNet-based Model
+- DeepLabV3
 
 ## Dataset
-The dataset is organized with COCO-style annotations, and is split into training, validation, and test sets. Images and annotations are stored in specified directories in Google Drive for ease of access in Google Colab.
+The dataset is organized with COCO-style annotations, and is split into training, validation, and test sets. Images, metadata and annotations files are stored in Google Drive.
 
 `Image Directory: /content/drive/MyDrive/9517`  
 `Annotations File: /content/drive/MyDrive/9517/annotations.json`  
 `Metadata File: /content/drive/MyDrive/9517/metadata_splits.csv`
-
-The dataset is loaded using SeaTurtleDataset class that handles images, annotations, and segmentation masks from annotation file.
 
 ## Model Architecture
 1. DeepLabV3 with Attention
@@ -70,7 +68,7 @@ For all models, including the traditional method, performance is evaluated using
 - **Carapace**
 
 ## Results and Visualization
-IoU Scores: The script provides IoU scores for each class on the test set.
+IoU Scores: Provides IoU scores for each class on the test set.
 Prediction Visualization: The predict_and_visualize function generates sample predictions, showing the original image, ground truth mask, and predicted mask.
 
 To evaluate and visualize the model's performance, you can use the following code:
