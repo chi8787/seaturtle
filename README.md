@@ -2,6 +2,9 @@
 This project focuses on segmenting three parts of sea turtles in images(Head, Flippers, Carapace) using deep learning. It leverages PyTorch and uses SeaTurtleID2022 datasets. The models are trained and evaluated using Intersection over Union (IoU) metrics.
 https://colab.research.google.com/drive/1Htd_5Og_GX_86xgw5PZ7j0g3y6MtWp3o?usp=sharing
 
+dataset:
+https://www.kaggle.com/datasets/wildlifedatasets/seaturtleid2022
+
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Dataset](#dataset)
